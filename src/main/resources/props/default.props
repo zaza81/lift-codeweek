@@ -1,0 +1,5 @@
+mail.smtp.host=smtp.gmail.com
+mail.smtp.user=
+mail.smtp.pass=
+
+mongo.default.uri=127.0.0.1:27017/code-week-2015

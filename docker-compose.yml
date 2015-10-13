@@ -1,0 +1,8 @@
+# sudo mkdir -p /srv/code-week-2015/mongo-data/db
+mongo:
+  image: dockerfile/mongodb
+  command: "/usr/bin/mongod --noprealloc --smallfiles"
+  ports:
+    - "27017:27017"
+  volumes:
+    - /srv/code-week-2015/mongo-data:/data
