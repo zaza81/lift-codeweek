@@ -1,5 +1,7 @@
 package bootstrap.liftweb
 
+import code.api.Api
+
 import scala.xml.{Null, UnprefixedAttribute}
 import javax.mail.internet.MimeMessage
 
@@ -55,6 +57,9 @@ class Boot extends Loggable {
 
     // Build SiteMap
     LiftRules.setSiteMap(Site.siteMap)
+
+    //Init REST Service
+    Api.init()
 
     // Error handler
     ErrorHandler.init

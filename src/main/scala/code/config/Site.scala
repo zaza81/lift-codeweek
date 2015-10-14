@@ -54,6 +54,7 @@ object Site extends Locs {
     editProfile.menu,
     Menu.i("Error") / "error" >> Hidden,
     Menu.i("listFood") / "listFood" >> TopBarGroup,
+    Menu.i("Orders") / "orders" >> TopBarGroup,
     Menu.i("404") / "404" >> Hidden,
     Menu.i("Throw") / "throw"  >> EarlyResponse(() => throw new Exception("This is only a test."))
   )
