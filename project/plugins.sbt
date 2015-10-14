@@ -1,3 +1,5 @@
+resolvers += Resolver.typesafeRepo("releases")
+
 addSbtPlugin("com.typesafe.sbt" % "sbt-less" % "1.0.6")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-uglify" % "1.0.3")
